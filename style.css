@@ -1,0 +1,318 @@
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .logo img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+
+  .header a.active {
+    background-color: rgb(170, 176, 182);
+    color: white;
+  }
+  
+
+  .header-right {
+    float: right;
+  }
+
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  .content1{
+    padding-top: 10px;
+    height: 500px;
+  }
+
+
+  .content1 h2{
+    text-align: center;
+    font-family: Verdana, sans-serif;
+  }
+
+  .content1 .content1-paragraph{
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .lesson {
+    float: left;
+    width: 25%;
+    position: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .lesson-icon {
+
+    padding-top: 40px;
+  }
+
+  .lesson-icon img {  
+
+    width: 200px;
+    height: 200px;
+    cursor:pointer;
+    border-radius: 100px;
+    transition: 0.3s all ease-in-out
+  }
+
+  .lesson-icon img:hover{  
+    transform: scale(1.05);
+  }
+  
+
+
+  .lesson-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+  }
+
+  .text-contents {
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #49464b;
+  }
+
+  .content2{
+    height: 500px;
+    background-color: #ebe1f1 ;
+  }
+  .content2-left{
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 150px;
+    float: left;
+  }
+
+  .harga{
+    color:red;
+  }
+
+  .btn-membership {
+    height: 62px;
+    left: 0px;
+    top: 30px;
+    bottom: 30px;
+    background: rgba(20, 54, 80, 0.96);
+    border-radius: 32px;
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    padding: 15px 30px;
+    cursor:pointer;
+
+  }
+  
+  .btn-membership:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btn-membership:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  .content2-right{
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 100px;
+    float:right;
+  }
+
+  .content-right-img img{
+    width: 500px;
+    height: 350px;
+  }
+
+  .content3{
+    height: 500px;
+  }
+
+  .content3-first{
+    padding-left: 150px;
+  }
+
+  .content3-first .fit{
+    color: blue;
+  }
+
+  .lessoncontent3 {
+    float: left;
+    width: 33%;
+    position: center;
+  }
+
+
+  .lesson-iconcontent3 {
+    position: center;
+    padding-top: 40px;
+
+  }
+
+  .lesson-iconcontent3 img {  
+    position: center;
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+  }
+
+
+  .content4{
+    height: 400px;
+  }
+  .content4-left{
+    width: 50%;
+    padding-left: 150px;
+    float: left;
+  }
+  .content4-right{
+    width: 50%;
+    padding-left: 50px;
+    float: right;
+  }
+
+  .content4-right-img img{
+    width: 500px;
+    height: 350px;
+  }
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.fotter-indogym{
+  color:white;
+}
+
+.container img{
+  width: 50px;
+  height: 50px;
+}
+
+.container-about{
+  height: 400px;
+}
+
+.container-about-content{
+  padding-top: 50px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 150px;
+}

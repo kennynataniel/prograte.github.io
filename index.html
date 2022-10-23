@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="assets/logo.png">
+    <title>IndoGym - Best Gym in Indonesia</title>
+    
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">
+          <img src="assets/logo.png" alt=""> IndoGym
+        </a>
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#class">Class</a>
+          <a href="#about">Contact</a>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+          <img src="assets/carousel1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="assets/carousel2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="assets/carousel3.png" style="width:100%">
+        </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <div class="content1">
+        <h2>We Have What You Need </h2>
+        <div class="content1-paragraph">
+            <p>A very well said quote “Health is Wealth” is totally correct. 
+            Health is something that keeps your mood good and makes you capable of doing various activities. 
+            There are various benefits of being healthy. 
+            This will not only make your life easy but will also build harmony in it.</p>
+        </div>
+        
+        <div class="lessons">
+            <div class="lesson">
+              <div class="lesson-icon">
+                <img src="assets/activity1.jpg">
+              </div>
+               <p class="text-contents">Cardio</p>
+            </div>
+            <div class="lesson">
+              <div class="lesson-icon">
+                <img src="assets/activity2.jpg">
+              </div>
+              <p class="text-contents">Weightlifting</p>
+            </div>
+            <div class="lesson">
+              <div class="lesson-icon">
+                <img src="assets/activity3.jpg">
+              </div>
+              <p class="text-contents">Bench Press</p>
+            </div>
+            <div class="lesson">
+              <div class="lesson-icon">
+                <img src="assets/activity4.jpg">
+              </div>
+              <p class="text-contents">Running</p>
+            </div>
+            <div class="clear"></div>
+          </div>
+    </div>
+
+    <div class="content2">
+        <div class="content2-left">
+            <h1>NgeGym Ga Pake Mahal</h1>
+            <h2>Mulai dari <span class="harga">Rp 150.000</span></h2>
+            <p>Dapatkan akses tak terbatas ke seluruh premium Indo Gym dan kelas gratis setiap harinya.</p>
+            <br>   
+            <button class="btn-membership">Mulai Membership</button>
+        </div>
+        <div class="content2-right">
+            <div class="content-right-img">
+                <img src="assets/register.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="content3">
+        <div class="content3-first">
+            <h2>Temukan aktivitas paling tepat untuk menjadi lebih <span class="fit">FIT</span></h2>
+        </div>
+
+        <div class="lessons">
+            <div class="lessoncontent3">
+              <div class="lesson-iconcontent3">
+                <img src="assets/content3img1.jpg">
+              </div>
+            </div>
+            <div class="lessoncontent3">
+              <div class="lesson-iconcontent3">
+                <img src="assets/content3img2.jpg">
+              </div>
+            </div>
+            <div class="lessoncontent3">
+              <div class="lesson-iconcontent3">
+                <img src="assets/content3img3.jpg">
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+    </div>
+
+    <div class="content4">
+        <div class="content4-left">
+            <h1>Get Fit With Us</h1>
+            <p><b>Indo Gym</b> berusaha memberikan kemudahan akses kesehatan dan 
+                kebugaran untuk semua orang melalui penawaran akses gym premium ke seluruh lokasi <b>Indo Gym</b>, 
+                kelas tanpa batas setiap hari dengan biaya terjangkau. Sekarang, 
+                siapapun menjadi lebih mudah untuk FIT bersama.</p>
+        </div>
+        <div class="content4-right">
+            <div class="content4-right-img">
+                <iframe width="500" height="300" src="videos/videoplayback.mp4"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+          <img src="assets/logo.png"> <span class="fotter-indogym">IndoGym</span> 
+          <p>Good health and good sense are two of life's greatest blessings.</p>
+          <p>Est-2022</p>
+        </div>
+    </footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
